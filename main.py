@@ -28,7 +28,7 @@ with st.form("nova_compra"):
 
   if st.form_submit_button("Adicionar"):
     if preco <= (orcamento-total):
-      nova_linha = pd.DataFrame({"produto" [produto], "preço" [preco]})
+      nova_linha = pd.DataFrame({"produto": [produto], "preço": [preco]})
       dados = pd.concat
       dados.to_csv("compras.csv", index=False)
     else:
