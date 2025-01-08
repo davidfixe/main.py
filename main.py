@@ -35,7 +35,7 @@ with st.form("nova_compra"):
       st.error("Não tem orçamento suficiente")
 
   if orcamento > 0:
-    fig, ax=plt.subplot(figsize=(8,8))
+    fig, ax=plt.subplots(figsize=(8,8))
     produtos = dados["produto"],tolist()
     valores = dados["preço"].tolist()
     restante = orcamento - total
