@@ -26,7 +26,7 @@ with st.form("nova_compra"):
   produto = st.text_input("Adicione aqui o seu produto")
   preco = st.number_input("Indique o preço", min_value = 0.0)
 
-  if st.submit_form("Adicionar"):
+  if st.form_submit_button("Adicionar"):
     if preco <= (orcamento-total):
       nova_linha = pd.DataFrame({"produto" [produto], "preço" [preco]})
       dados = pd.concat
